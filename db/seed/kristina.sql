@@ -1,4 +1,8 @@
 INSERT INTO
-  users (username)
+  movies (title)
 VALUES
-  ('Kristina');
+  ('Wicked'),
+  ('Beetlejuice'),
+  ('Grinch'),
+  ('Spirited Away'),
+  ('The Silence of the Lambs');
