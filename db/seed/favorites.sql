@@ -1,4 +1,7 @@
-INSERT INTO favourites (user_id, movie_id) VALUES
-(6, 23),
-(6, 21),
-(6, 24);
+INSERT INTO favourites (user_id, movie_id) VALUES ('2', '1');
+INSERT INTO favourites (user_id, movie_id) VALUES ('2', '2');
+INSERT INTO favourites (user_id, movie_id) VALUES ('2', '3');
+INSERT INTO favourites (user_id, movie_id) VALUES (2,2);
+INSERT INTO favourites (user_id, movie_id) VALUES (2,4);
+INSERT INTO favourites (user_id, movie_id) VALUES (2,6);
+
