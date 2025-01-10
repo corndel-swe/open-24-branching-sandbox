@@ -2,6 +2,30 @@
 
 In this exercise, we will be setting up a SQLite database, creating branches, and adding data to the database through SQL scripts.
 
+The `users` table stores user information with unique identifiers, the `movies` table contains movie details, and the `favourites` table links users to their favorite movies through foreign keys referencing the `users` and `movies` tables.
+
+```mermaid
+erDiagram
+    USERS {
+        INT user_id PK "AUTO_INCREMENT"
+        TEXT username 
+    }
+
+    MOVIES {
+        INT movie_id PK "AUTO_INCREMENT"
+        TEXT title 
+    }
+
+    FAVOURITES {
+        INT favourite_id PK "AUTO_INCREMENT"
+        INT user_id FK "REFERENCES users(user_id)"
+        INT movie_id FK "REFERENCES movies(movie_id)"
+    }
+
+    USERS ||--o{ FAVOURITES : "has"
+    MOVIES ||--o{ FAVOURITES : "has"
+```
+
 Follow the steps below to complete each task.
 
 ## Setup
